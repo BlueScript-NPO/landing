@@ -1,0 +1,31 @@
+title: BlueScript
+description: BlueScript is a non-profit organization that develops free and open-source tools to help dyslexic individuals.
+hero:
+  title: Democratizing dyslexia support
+  description: BlueScript develops free and open-source tools to help dyslexic individuals.
+  headline:
+    label: Made by SuhJae and Community
+    to: https://www.instagram.com/suhjae.dev/
+    icon: i-heroicons-arrow-top-right-on-square-20-solid
+  links:
+    - label: Get started
+      icon: i-heroicons-arrow-right-20-solid
+      trailing: true
+      to: "/"
+      size: xl
+    - label: Access Source Code
+      icon: i-simple-icons-github
+      size: xl
+      color: gray
+      to: https://github.com/BlueScript-NPO
+      target: _blank
+links:
+  - title: Features
+    slug: features
+    icon: i-heroicons-cube-transparent
+  - title: About Us
+    slug: about-us
+    icon: i-heroicons-users
+  - title: FAQ
+    slug: faq
+    icon: i-heroicons-question-mark-circle
