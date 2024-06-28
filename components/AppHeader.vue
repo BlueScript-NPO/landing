@@ -1,37 +1,23 @@
-<script setup lang="ts">
-const { activeHeadings, updateHeadings } = useScrollspy();
+<script setup>
+import { computed } from "vue";
+
+const { activeHeadings } = useScrollspy();
 const colorMode = useColorMode();
 const isDark = computed(() => colorMode.value === "dark");
 
-const links = computed(() => [
-  {
-    label: "Features",
-    to: "#features",
-    icon: "i-heroicons-cube-transparent",
-    active:
-      activeHeadings.value.includes("features") &&
-      !activeHeadings.value.includes("testimonials"),
-  },
-  // {
-  //   label: "Testimonials",
-  //   to: "#testimonials",
-  //   icon: "i-heroicons-academic-cap",
-  //   active: activeHeadings.value.includes("testimonials"),
-  // },
-  {
-    label: "About Us",
-    to: "#about-us",
-    icon: "i-heroicons-users",
-    active: activeHeadings.value.includes("about-us"),
-  },
+const { data: page } = await useAsyncData("index", () =>
+  queryContent("/").findOne()
+);
 
-  {
-    label: "FAQ",
-    to: "#faq",
-    icon: "i-heroicons-question-mark-circle",
-    active: activeHeadings.value.includes("faq"),
-  },
-]);
+const links = computed(() => {
+  const headings = page.value?.links || []; // Provide a fallback empty array
+  return headings.map((heading) => ({
+    label: heading.title,
+    to: `#${heading.slug}`,
+    icon: heading.icon || "i-heroicons-default-icon", // Provide a default icon or handle as needed
+    active: activeHeadings.value.includes(heading.slug),
+  }));
+});
 </script>
 
 <template>

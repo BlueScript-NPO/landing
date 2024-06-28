@@ -1,48 +1,48 @@
 <template>
   <ULandingHero
-    title="Democratizing dyslexia support"
-    description="BlueScript developes free and open-source tools to help dyslexic individuals."
-    :links="links"
+    :title="page.hero.title"
+    :description="page.hero.description"
+    :links="page.hero.links"
   >
     <template #headline>
       <UBadge
+        v-if="page.hero.headline"
         variant="subtle"
         size="lg"
         class="relative rounded-full font-semibold"
       >
         <NuxtLink
-          to="https://github.com/BlueScript-NPO"
+          :to="page.hero.headline.to"
           target="_blank"
           class="focus:outline-none"
           tabindex="-1"
         >
           <span class="absolute inset-0" aria-hidden="true" />
         </NuxtLink>
-        Access the App
+
+        {{ page.hero.headline.label }}
+
         <UIcon
-          name="i-heroicons-arrow-top-right-on-square"
+          v-if="page.hero.headline.icon"
+          :name="page.hero.headline.icon"
           class="ml-1 w-4 h-4 pointer-events-none"
         />
       </UBadge>
     </template>
+
+    <ImagePlaceholder />
   </ULandingHero>
 </template>
 
-<script setup lang="ts">
-const links = ref([
-  {
-    label: "Get started",
-    to: "/",
-    trailingIcon: "i-heroicons-arrow-right",
-    size: "lg",
-    variant: "solid",
-  },
-  {
-    label: "Access Source Code",
-    to: "https://github.com/BlueScript-NPO",
-    icon: "i-simple-icons-github",
-    size: "xl",
-    variant: "outline",
-  },
-]);
+<script setup>
+const { data: page } = await useAsyncData("index", () =>
+  queryContent("/").findOne()
+);
+
+useSeoMeta({
+  title: page.value.title,
+  ogTitle: page.value.title,
+  description: page.value.description,
+  ogDescription: page.value.description,
+});
 </script>
