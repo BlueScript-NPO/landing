@@ -29,3 +29,26 @@ links:
   - title: FAQ
     slug: faq
     icon: i-heroicons-question-mark-circle
+features:
+  headline: Key Features
+  title: Why Choose BlueScript?
+  description: BlueScript is a non-profit organization dedicated to developing free and open-source tools that support individuals with dyslexia.
+  items:
+    - title: User-Friendly
+      description: BlueScript is intuitively designed for home use, enabling individuals with dyslexia to benefit without needing professional assistance.
+      icon: i-heroicons-light-bulb
+    - title: Always Free
+      description: Committed to accessibility, BlueScript ensures that everyone has free access to essential dyslexia support tools.
+      icon: i-heroicons-currency-dollar
+    - title: Open Source
+      description: BlueScript welcomes contributions from everyone. Access our source code to modify, enhance, and innovate freely.
+      icon: i-heroicons-globe-alt
+    - title: Privacy First
+      description: BlueScript prioritizes your privacy by not collecting any personal information, upholding your fundamental right to privacy.
+      icon: i-heroicons-shield-check
+    - title: Fully Accessible
+      description: Utilizing the latest web technologies, BlueScript is designed to be accessible on all devices, ensuring inclusivity for all users.
+      icon: i-heroicons-user-circle
+    - title: Scientifically Backed
+      description: BlueScript's training methods are developed and validated by experts with over two decades of dyslexia research experience.
+      icon: i-heroicons-clipboard-document-check
