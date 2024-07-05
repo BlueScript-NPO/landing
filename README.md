@@ -1,75 +1,20 @@
-# Nuxt 3 Minimal Starter
+<p align="center">
+  <img src="docs/banner.png" width="100%" />
+</p>
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+_🚧 This project is under heavy develpment. We'll be accepting contribution after the minimal foundation is built._
 
-## Setup
+# BlueScript Landing Page
 
-Make sure to install the dependencies:
+BlueScript is a Non Profit Organization creating open source software to aid people who suffer dylexia.
+
+## Getting Started
+
+If you want to contribute to this project, you can clone this repository and start working on it. After cloning the repository, you run the following commands to start the project:
 
 ```bash
-# npm
 npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
 npm run dev
-
-# pnpm
-pnpm run dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
 ```
 
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+This project uses Nuxt UI pro and license is needed to build the project. You can get a license from [Nuxt UI Pro](https://ui.nuxt.com/pro/pricing).
