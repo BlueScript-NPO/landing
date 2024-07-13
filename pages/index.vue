@@ -49,6 +49,33 @@
       />
     </UPageGrid>
   </ULandingSection>
+
+  <ULandingSection
+    class="bg-primary-50 dark:bg-primary-400 dark:bg-opacity-10"
+    id="documentation"
+  >
+    <ULandingCTA v-bind="page.cta" :card="false" />
+  </ULandingSection>
+
+  <ULandingSection
+    id="faq"
+    :title="page.faq.title"
+    class="scroll-mt-[var(--header-height)]"
+  >
+    <ULandingFAQ
+      multiple
+      :items="page.faq.items"
+      :ui="{
+        button: {
+          label: 'font-semibold',
+          trailingIcon: {
+            base: 'w-6 h-6',
+          },
+        },
+      }"
+      class="max-w-4xl mx-auto"
+    />
+  </ULandingSection>
 </template>
 
 <script setup>

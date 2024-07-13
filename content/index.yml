@@ -23,12 +23,18 @@ links:
   - title: Features
     slug: features
     icon: i-heroicons-cube-transparent
-  - title: About Us
-    slug: about-us
-    icon: i-heroicons-users
+  - title: Documentation
+    slug: documentation
+    icon: i-heroicons-book-open
   - title: FAQ
     slug: faq
     icon: i-heroicons-question-mark-circle
+cta:
+  title: Documentation
+  description: Learn how to use BlueScript's tools to support individuals with dyslexia.
+  links:
+    - label: Open Documentation
+      size: xl
 features:
   headline: Key Features
   title: Why Choose BlueScript?
@@ -52,3 +58,20 @@ features:
     - title: Scientifically Backed
       description: BlueScript's training methods are developed and validated by experts with over two decades of dyslexia research experience.
       icon: i-heroicons-clipboard-document-check
+faq:
+  title: Frequently asked questions
+  items:
+    - label: What is dyslexia?
+      content: Dyslexia is a learning disorder that affects an individual's ability to read, write, and spell. It is a neurological condition that is often hereditary and can vary in severity.
+    - label: How common is dyslexia?
+      content: Dyslexia is one of the most common learning disorders, affecting approximately 3~7% of the global population.
+    - label: Can dyslexia be cured?
+      content: Dyslexia is a lifelong condition that cannot be cured. However, with appropriate support and intervention, individuals with dyslexia can learn to manage their symptoms effectively.
+    - label: How can BlueScript help individuals with dyslexia?
+      content: BlueScript develops free and open-source tools that support individuals with dyslexia by providing training exercises, reading assistance, and other resources to help improve reading and writing skills.
+    - label: How can I contribute to BlueScript?
+      content: You can contribute to BlueScript by providing feedback, reporting issues, or contributing code to our open-source projects. Visit our GitHub repository to learn more.
+    - label: Is BlueScript a non-profit organization?
+      content: Yes, BlueScript is a non-profit organization dedicated to developing free and open-source tools to support individuals with dyslexia.
+    - label: Will BlueScript turn into a paid service in the future?
+      content: No, BlueScript is committed to providing free access to its tools and resources to ensure that everyone can benefit from dyslexia support without financial barriers by leveraging open-source methodologies.
